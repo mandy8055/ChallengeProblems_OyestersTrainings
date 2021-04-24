@@ -22,9 +22,9 @@ const countLeastAndMostFrequentBirds = (arr) => {
   };
   return [getKey(Math.max(...map.values())), getKey(Math.min(...map.values()))];
 };
-
+// Please uncomment a declaration and console.log to run the code.
 // const birdArr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
 // const birdArr = [1, 2, 2, 4, 4, 4, 4, 5];
-const birdArr = [1, 1, 2, 2, 4, 4, 4, 4, 5];
+// const birdArr = [1, 1, 2, 2, 4, 4, 4, 4, 5];
 
-console.log(countLeastAndMostFrequentBirds(birdArr));
+// console.log(countLeastAndMostFrequentBirds(birdArr));
