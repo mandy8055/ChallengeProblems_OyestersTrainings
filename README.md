@@ -16,7 +16,7 @@ Input – [1,2,2,4,4,4,4,5] Output – [4, 1]
   #### Initial Idea
   The quick idea was to use **two nested loops.** The outer loop will iterate the element in the `birdArr` and the inner loop keeps the count of `max` and `min` frequency of the birds. Obviously, this approach is the brute-force or naive approach as the time complexity tradeoff is **O(n^2)**.
   #### Final Idea
-  The second idea which came to me is to use a `Hashtable` or a `Map`. In this approach, I created a `Map` and populated it with the elements as **keys of the Map** and  **every element's frequency** as their corresponding values. I could also have taken an **auxiliary array** for the same and kept the count but this idea was not good as for large ids, the memory would be wasted a lot.
+  The second idea which came to me is to use a `Hashtable` or a `Map`. In this approach, I created a `Map` and populated it with the elements as **keys of the Map** and  **every element's frequency** as their corresponding values. I could also have taken an **auxiliary array** for the same and kept the count but this idea was not good as for large ids, the memory would be wasted a lot. When using this approach the time complexity is significantly reduced to **O(n)** along with space complexity as **O(n)** since we took an extra space for `Map`.
 
   ##### Proposed algorithm
   1. Create a Map object `map`.
@@ -45,4 +45,7 @@ As mentioned in the problem, the time will be given in 12-hr AM/PM format, so th
 3. After getting the `hour` and `modifier`, 
    1. Check if `hour` is equal to `12`. If yes, convert it to `00`.
    2. Check if `modifier` is `PM`. If yes, parse the string `hour` to integer and add `12` to it.
-4. Append the `46:45` minute and second and return the result.  
+4. Append the `46:45` minute and second and return the result.
+
+**NOTE: Flowchart's pdf is available in data folder.**
+
